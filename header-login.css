@@ -19,7 +19,7 @@
   position: absolute;
   font-family: Arial, Helvetica, sans-serif;
   top: 38%;
-  left: 3%;
+  left: 5%;
 }
 
 .logo span {
@@ -223,4 +223,12 @@ input:hover {
   height: 100%;
   transform: translateX(0);
   transition: 0.2s transform linear, 0.2s height linear 0.2s;
+}
+
+/* ANCHOR -------------responsive design for smartphones--------------------*/
+
+@media only screen and (max-width: 1080px) {
+  .logo {
+    max-width: 70vw;
+  }
 }

@@ -22,7 +22,7 @@ h3 {
   display: flex;
   justify-content: flex-end;
   gap: 80px;
-  margin-right: 150px;
+  margin-right: 2%;
   height: 60px;
   margin-top: 50px;
 }
@@ -46,8 +46,8 @@ h3 {
   position: relative;
   margin-top: -80px;
   margin-right: auto;
-  margin-left: 50px;
-  width: 500px;
+  margin-left: 3%;
+  width: 30vw;
   height: 250px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 30px 30px 30px;
@@ -140,16 +140,14 @@ a:hover {
 
 /* ANCHOR -------------responsive Design for tablets---------------*/
 
-@media only screen and (min-width: 768px) and (max-width: 1366px) {
+@media only screen and (max-width: 1080px) {
   .infos {
-    top: 220px;
+    display: flex;
+    margin-top: 1120px;
   }
-
-  .grid-info {
-    margin-left: -4%;
-  }
-
   .flex-footer {
-    margin-right: 2%;
+    gap: 30px;
   }
 }
+
+/* ANCHOR -------------responsive design for smartphones--------------------*/
