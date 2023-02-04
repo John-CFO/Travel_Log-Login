@@ -27,16 +27,18 @@ body {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 855px) {
   body {
     background-image: url("bg-image.jpg");
+    background-size: cover;
+    background-position: center right 20%;
   }
 }
 
 @media (max-width: 800px) {
   body {
     background-image: url("bg-image.jpg");
-    background-position: center right;
+    background-position: center right 20%;
     background-size: cover;
   }
 }

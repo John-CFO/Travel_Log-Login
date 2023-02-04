@@ -231,6 +231,9 @@ input:hover {
 
 /* ANCHOR -------------responsive design for smartphones--------------------*/
 
+@media only screen and (max-width: 854px) {
+}
+
 @media only screen and (max-width: 800px) {
   .logo {
     max-width: 70vw;

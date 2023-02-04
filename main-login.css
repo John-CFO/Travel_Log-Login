@@ -410,12 +410,16 @@ input:not(:placeholder-shown) ~ .reset {
 @media only screen and (max-width: 1140px) {
   body {
     font-size: 16px;
+    position: absolute;
   }
   .login-container {
-    margin-left: 5%;
+    /* margin-left: 1%;*/
     max-width: 80vw;
-    max-height: 50vw;
-    margin-top: 100px;
+    max-height: 80vw;
+    /*margin-top: 100px;*/
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
   }
 }
 
