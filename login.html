@@ -33,24 +33,26 @@
   <body>
     <header class="header">
       <!------------Logo---------------->
-      <div class="logo">
-        <span class="hover-underline-animation">TRAVEL_LOG</span>
+      <div class="head-parent">
+        <div class="logo">
+          <span class="hover-underline-animation">TRAVEL_LOG</span>
+        </div>
       </div>
     </header>
 
     <section class="login-container">
-      <h1>Welcome Back <span style="color: white">Traveller</span></h1>
-      <br />
-      <h2><span style="color: #ffffffb3"> to manage your account</span></h2>
+      <div class="welcome">
+        <h1>Welcome Back <span style="color: white">Traveller</span></h1>
+        <br />
+        <h2><span style="color: #ffffffb3"> to manage your account</span></h2>
+      </div>
       <br />
       <br />
       <br />
       <br />
 
       <!-------------Login Section---------->
-      <form>
-        <h2></h2>
-
+      <form class="log-section">
         <div class="container-mail">
           <input
             class="input-field"
@@ -105,8 +107,9 @@
       <br />
       <br />
       <a class="lost" href="#">Lost your Password?</a>
-      <span class="reg-text">If you are a new member?</span>
       <div class="position-btn">
+        <span class="reg-text">If you are a new member?</span>
+
         <button class="registry" href="#">Sign In</button>
       </div>
     </section>

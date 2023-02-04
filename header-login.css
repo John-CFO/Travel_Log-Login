@@ -1,13 +1,17 @@
 .header {
-  background-color: #1a1a1a;
   color: white;
-  padding: 100px;
   top: 0;
   left: 0;
   right: 0;
   position: absolute;
+}
+.head-parent {
   position: fixed;
-  flex-wrap: wrap;
+  top: 0;
+  height: 200px;
+  width: 100vw;
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
   z-index: +3;
 }
 
@@ -227,7 +231,7 @@ input:hover {
 
 /* ANCHOR -------------responsive design for smartphones--------------------*/
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 800px) {
   .logo {
     max-width: 70vw;
   }

@@ -8,7 +8,9 @@ html {
 }
 
 body {
+  position: relative;
   height: 100vh;
+  min-height: 100%;
   background: url("bg-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,19 +21,19 @@ body {
   flex-wrap: wrap;
 }
 
-@media (min-width: 1080px) {
+@media (max-width: 1140px) {
   body {
     background-image: url("bg-image.jpg");
   }
 }
 
-@media (min-width: 640px) and (max-width: 1079px) {
+@media (max-width: 850px) {
   body {
     background-image: url("bg-image.jpg");
   }
 }
 
-@media (max-width: 1079px) {
+@media (max-width: 800px) {
   body {
     background-image: url("bg-image.jpg");
     background-position: center right;

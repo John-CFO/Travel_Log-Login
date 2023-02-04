@@ -1,12 +1,11 @@
 .infos {
   background-color: #1a1a1a;
-  position: absolute;
-  width: 100%;
+  position: relative;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   height: 250px;
   margin-top: 900px;
-  z-index: +1;
 }
 
 h3 {
@@ -62,15 +61,21 @@ h3 {
 /* ANCHOR -------------Copyright-----------------*/
 
 .copy {
+  position: relative;
   color: #ffffff;
   font-family: sans-serif;
   font-size: smaller;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  bottom: 12px;
 }
-
+hr {
+  position: relative;
+  bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
 /* ANCHOR ------------Referlinks(Footer)------------*/
 
 a:hover {

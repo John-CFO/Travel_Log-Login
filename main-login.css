@@ -2,7 +2,6 @@
 .login-container {
   position: absolute;
   left: 5%;
-
   max-width: 80vw;
   max-height: 80vw;
   top: 240px;
@@ -18,12 +17,15 @@
   box-shadow: 3px, 3px, 3px rgba(0, 0, 0, 0.09);
   flex-wrap: wrap;
 }
-
+.welcome {
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+}
 h1 {
   font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  margin-top: 50px;
 }
 h2 {
   font-size: 25px;
@@ -31,6 +33,10 @@ h2 {
   font-weight: bold;
 }
 
+.log-section {
+  position: relative;
+  bottom: 400px;
+}
 /* ANCHOR -------------------Lost Passwort------------------*/
 
 .lost {
@@ -38,39 +44,36 @@ h2 {
   color: #ffffff;
   text-decoration: none;
   position: relative;
-  top: 50px;
+  bottom: 340px;
   right: 30px;
 }
 
 /* ANCHOR ------------------Sign In Section----------------*/
 
+.position-btn {
+  position: absolute;
+  margin-left: 55%;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
 .registry {
-  color: #000000;
+  color: #000;
   text-decoration: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
-  margin-top: 100px;
-}
-
-.container-psw {
-  position: relative;
-  top: 35px;
 }
 .reg-text {
-  position: absolute;
-  bottom: 15%;
-  margin-left: 40%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 20px;
   color: #ffffffb3;
 }
-
 button {
-  position: relative;
-  margin-left: 70%;
-  top: -90px;
   border: 2px solid #000;
   border-radius: 10px;
   background: #ffffff;
@@ -88,6 +91,10 @@ button:hover {
 }
 
 /* ANCHOR ---------------Log In Section--------------------*/
+.container-psw {
+  position: relative;
+  top: 35px;
+}
 
 #myButton {
   border: 2px solid #000;
@@ -103,8 +110,8 @@ button:hover {
 /* ANCHOR -------------------Show Password---------------------*/
 .container-toggle {
   position: absolute;
-  margin-left: 30%;
-  top: 328px;
+  margin-left: 34%;
+  bottom: 94px;
 }
 
 #show-pw {
@@ -405,17 +412,25 @@ input:not(:placeholder-shown) ~ .reset {
     font-size: 16px;
   }
   .login-container {
-    position: absolute;
     margin-left: 5%;
     max-width: 80vw;
-    max-height: 80vw;
-    top: 280px;
+    max-height: 50vw;
+    margin-top: 100px;
   }
 }
 
 @media only screen and (max-width: 855px) {
   body {
     font-size: 11px;
+  }
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    align-self: center;
   }
   .container-toggle {
     position: absolute;
@@ -430,16 +445,14 @@ input:not(:placeholder-shown) ~ .reset {
     top: 280px;
   }
   .reg-text {
-    font-size: 15px;
-    margin-left: 40%;
+    font-size: 18px;
   }
-  .position-btn {
-    display: flex;
-    justify-content: center;
+  .lost {
+    font-size: 16px;
   }
 }
 
 /* ANCHOR -------------responsive design for smartphones--------------------*/
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 800px) {
 }
