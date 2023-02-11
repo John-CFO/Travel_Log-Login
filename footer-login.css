@@ -1,12 +1,11 @@
 .infos {
   background-color: #1a1a1a;
-  position: absolute;
-  width: 100%;
+  position: relative;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   height: 250px;
-  margin-top: 900px;
-  z-index: +1;
+  margin-top: 50px;
 }
 
 h3 {
@@ -22,7 +21,7 @@ h3 {
   display: flex;
   justify-content: flex-end;
   gap: 80px;
-  margin-right: 150px;
+  margin-right: 2%;
   height: 60px;
   margin-top: 50px;
 }
@@ -46,8 +45,8 @@ h3 {
   position: relative;
   margin-top: -80px;
   margin-right: auto;
-  margin-left: 50px;
-  width: 500px;
+  margin-left: 3%;
+  width: 30vw;
   height: 250px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 30px 30px 30px;
@@ -62,15 +61,21 @@ h3 {
 /* ANCHOR -------------Copyright-----------------*/
 
 .copy {
+  position: relative;
   color: #ffffff;
   font-family: sans-serif;
   font-size: smaller;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  bottom: 18px;
 }
-
+hr {
+  position: relative;
+  bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
 /* ANCHOR ------------Referlinks(Footer)------------*/
 
 a:hover {
@@ -140,16 +145,68 @@ a:hover {
 
 /* ANCHOR -------------responsive Design for tablets---------------*/
 
-@media only screen and (min-width: 768px) and (max-width: 1366px) {
+@media only screen and (max-width: 1080px) {
   .infos {
-    top: 220px;
+    display: flex;
+    margin-top: 220px;
   }
+  .flex-footer {
+    gap: 30px;
+  }
+}
 
+/* ANCHOR -------------responsive design for smartphones--------------------*/
+
+@media only screen and (max-width: 800px) {
   .grid-info {
-    margin-left: -4%;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 572px) {
+  .infos {
+    position: relative;
+    top: -210px;
+    height: 300px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .grid-info {
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-53%);
+    display: grid;
+    position: relative;
+    font-size: 15px;
+    width: 70vw;
+    height: 250px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 30px 30px;
+    gap: 5px;
+
+    grid-template-areas:
+      "item.1 item.2"
+      "item.3 item.4"
+      "item.5 item.6";
   }
 
   .flex-footer {
-    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 422px) {
+  .infos {
+    position: relative;
+    top: -180px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .infos {
+    position: relative;
+    top: -250px;
   }
 }

@@ -1,10 +1,19 @@
 /* ANCHOR ------------------Glasscontainer------------------*/
+.main-position {
+  position: relative;
+  height: 900px;
+  width: 90vw;
+  /*border: 5px solid rgb(255, 0, 0);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .login-container {
   position: absolute;
-  left: 5%;
-
   max-width: 80vw;
-  top: 240px;
+  max-height: 700px;
+  top: 250px;
   height: 550px;
   width: 700px;
   padding: 30px 50px;
@@ -15,64 +24,73 @@
   border-top: 1px solid rgba(255, 255, 255, 0.294);
   border-left: 1px solid rgba(255, 255, 255, 0.294);
   box-shadow: 3px, 3px, 3px rgba(0, 0, 0, 0.09);
-  flex-wrap: wrap;
 }
-
+.welcome {
+  /*border: 1px solid black;*/
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 h1 {
   font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  margin-top: 50px;
 }
 h2 {
-  font-size: 25px;
+  font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
+.log-section {
+  /*border: 1px solid black;*/
+  height: 200px;
+  width: auto;
+  position: relative;
+  bottom: 460px;
+}
 /* ANCHOR -------------------Lost Passwort------------------*/
 
 .lost {
   font-family: sans-serif;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   position: relative;
-  top: 50px;
+  bottom: 340px;
   right: 30px;
+  font-size: 20px;
 }
 
 /* ANCHOR ------------------Sign In Section----------------*/
 
+.position-btn {
+  position: relative;
+  top: -450px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
 .registry {
-  color: #000000;
+  color: #000;
   text-decoration: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
-  margin-top: 100px;
-}
-
-.container-psw {
-  position: relative;
-  top: 35px;
 }
 .reg-text {
-  position: absolute;
-  bottom: 15%;
-  margin-left: 40%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 20px;
-  color: #ffffffb3;
+  color: #fff;
 }
-
 button {
-  position: relative;
-  margin-left: 70%;
-  top: -90px;
-  border: 2px solid #000;
+  /*border: 2px solid #000;*/
   border-radius: 10px;
-  background: #ffffff;
+  background: #fff;
   color: #2e2e2e;
   padding: 10px;
   font-size: 22px;
@@ -81,12 +99,41 @@ button {
 
 button:hover {
   background-color: #000000;
-  color: white;
-  border: 2px solid #ffffff;
+  color: #fff;
+  border: 2px solid #fff;
   cursor: pointer;
 }
 
-/* ANCHOR ---------------Log In Section--------------------*/
+/* ANCHOR ---------------Log In Section-----------------------*/
+.container-psw {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  top: 84px;
+  z-index: +2;
+}
+
+.container-mail {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: +1;
+}
+
+.login-btn {
+  position: relative;
+  /*border: 1px solid black;*/
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*margin: auto;*/
+  bottom: -140px;
+  right: 25%;
+}
 
 #myButton {
   border: 2px solid #000;
@@ -95,24 +142,34 @@ button:hover {
   font-weight: bold;
   padding: 10px;
   border-radius: 10px;
-  margin-top: 80px;
   cursor: pointer;
 }
 
+.cut-log-section {
+  bottom: 460px;
+}
 /* ANCHOR -------------------Show Password---------------------*/
 .container-toggle {
-  position: absolute;
-  margin-left: 30%;
-  top: 328px;
+  max-width: 80vw;
+  position: relative;
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  bottom: 38px;
 }
 
 #show-pw {
   position: absolute;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 16px;
-  color: #ffffffb3;
-  top: -40px;
+  font-size: 15px;
+  color: #fff;
+  width: 130px;
+  bottom: 120px;
 }
 
 input[type="checkbox"] {
@@ -120,6 +177,18 @@ input[type="checkbox"] {
 }
 
 /* ANCHOR ------------------Plane Switch------------------------*/
+
+.plane-position {
+  /*border: 1px solid black;*/
+  position: relative;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: +1;
+  left: 24%;
+}
 
 .plane-switch {
   --dot: #fff;
@@ -397,14 +466,142 @@ input:not(:placeholder-shown) ~ .reset {
   border-color: transparent;
 }
 
-/* ANCHOR -------------responsive Design for tablets--------------------*/
+/* ANCHOR -------------responsive design for tablets--------------------*/
 
-@media only screen and (min-width: 768px) and (max-width: 1366px) {
-  .login-container {
-    min-width: 80%;
-    top: 250px;
+@media only screen and (max-width: 860px) {
+  .main-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+}
+/* ANCHOR -------------responsive design for smartphones--------------------*/
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 25px;
   }
 }
 
-@media only screen and (min-width: 750px) and (max-width: 820px) {
+@media only screen and (max-width: 715px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .login-container {
+    max-width: 75vw;
+  }
+  .input-field {
+    width: 180px;
+    height: 38px;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .login-container {
+    height: 500px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .login-container {
+    max-width: 65vw;
+  }
+  .input-field {
+    width: 150px;
+    height: 35px;
+  }
+  #show-pw {
+    font-size: 12px;
+  }
+  #myButton {
+    font-size: 18px;
+  }
+  .login-btn {
+    top: 100px;
+  }
+  .reg-text {
+    font-size: 15px;
+  }
+  .registry {
+    font-size: 18px;
+    width: 120px;
+    height: 40x;
+  }
+  .lost {
+    font-size: 15px;
+  }
+  .cut-log-section {
+    width: 100%;
+    right: 8%;
+  }
+}
+
+@media only screen and (max-width: 422px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  .input-field {
+    width: 120px;
+    height: 30px;
+  }
+  .cut-log-section {
+    width: 100%;
+    right: 12%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 13px;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  .login-container {
+    max-width: 50vw;
+    height: 480px;
+  }
+  .reg-text {
+    font-size: 10px;
+  }
+  .registry {
+    font-size: 15px;
+    width: 100px;
+    height: 35x;
+  }
+  .lost {
+    font-size: 12px;
+  }
+  #myButton {
+    font-size: 15px;
+  }
+  .cut-log-section {
+    width: 100%;
+    right: 19%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
 }
