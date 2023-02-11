@@ -157,15 +157,44 @@ a:hover {
 
 /* ANCHOR -------------responsive design for smartphones--------------------*/
 
-@media only screen and (max-width: 855px) {
+@media only screen and (max-width: 800px) {
+  .grid-info {
+    font-size: 14px;
+  }
 }
+
 @media only screen and (max-width: 572px) {
   .infos {
     position: relative;
     top: -210px;
+    height: 300px;
   }
   h3 {
     font-size: 15px;
+  }
+  .grid-info {
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-53%);
+    display: grid;
+    position: relative;
+    font-size: 15px;
+    width: 70vw;
+    height: 250px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 30px 30px;
+    gap: 5px;
+
+    grid-template-areas:
+      "item.1 item.2"
+      "item.3 item.4"
+      "item.5 item.6";
+  }
+
+  .flex-footer {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
   }
 }
 @media only screen and (max-width: 422px) {
