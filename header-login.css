@@ -229,13 +229,54 @@ input:hover {
   transition: 0.2s transform linear, 0.2s height linear 0.2s;
 }
 
+/*ANCHOR ---------------responsive design for tablets------------------------*/
+
+@media only screen and (max-width: 1180px) {
+  .logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0;
+  }
+}
+
 /* ANCHOR -------------responsive design for smartphones--------------------*/
 
-@media only screen and (max-width: 854px) {
+@media only screen and (max-width: 855px) {
+  .logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .logo {
-    max-width: 70vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0;
+  }
+  .head-parent {
+    height: 140px;
+  }
+  .logo span {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0;
+  }
+  .logo span {
+    font-size: 30px;
+  }
+  .head-parent {
+    height: 120px;
   }
 }

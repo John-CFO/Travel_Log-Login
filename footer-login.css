@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   height: 250px;
-  margin-top: 900px;
+  margin-top: 50px;
 }
 
 h3 {
@@ -68,7 +68,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 12px;
+  bottom: 18px;
 }
 hr {
   position: relative;
@@ -148,7 +148,7 @@ a:hover {
 @media only screen and (max-width: 1080px) {
   .infos {
     display: flex;
-    margin-top: 1120px;
+    margin-top: 220px;
   }
   .flex-footer {
     gap: 30px;
@@ -157,5 +157,5 @@ a:hover {
 
 /* ANCHOR -------------responsive design for smartphones--------------------*/
 
-@media only screen and (max-width: 854px) {
+@media only screen and (max-width: 855px) {
 }
