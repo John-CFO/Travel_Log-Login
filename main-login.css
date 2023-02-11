@@ -111,7 +111,7 @@ button:hover {
   justify-content: center;
   align-items: flex-start;
   top: 84px;
-  z-index: +1;
+  z-index: +2;
 }
 
 .container-mail {
@@ -488,9 +488,6 @@ input:not(:placeholder-shown) ~ .reset {
   h2 {
     font-size: 25px;
   }
-  .lost {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 715px) {
@@ -503,9 +500,16 @@ input:not(:placeholder-shown) ~ .reset {
   .login-container {
     max-width: 75vw;
   }
+  .input-field {
+    width: 180px;
+    height: 38px;
+  }
 }
 
 @media screen and (max-width: 572px) {
+  .login-container {
+    height: 500px;
+  }
   h1 {
     font-size: 24px;
   }
@@ -515,23 +519,87 @@ input:not(:placeholder-shown) ~ .reset {
   .login-container {
     max-width: 65vw;
   }
+  .input-field {
+    width: 150px;
+    height: 35px;
+  }
+  #show-pw {
+    font-size: 12px;
+  }
+  #myButton {
+    font-size: 18px;
+  }
+  .login-btn {
+    top: 100px;
+  }
+  .reg-text {
+    font-size: 15px;
+  }
+  .registry {
+    font-size: 18px;
+    width: 120px;
+    height: 40x;
+  }
+  .lost {
+    font-size: 15px;
+  }
+  .cut-log-section {
+    width: 100%;
+    right: 8%;
+  }
+}
+
+@media only screen and (max-width: 422px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  .input-field {
+    width: 120px;
+    height: 30px;
+  }
+  .cut-log-section {
+    width: 100%;
+    right: 12%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   h1 {
-    font-size: 22px;
+    font-size: 13px;
   }
   h2 {
-    font-size: 15px;
+    font-size: 10px;
   }
   .login-container {
     max-width: 50vw;
+    height: 480px;
+  }
+  .reg-text {
+    font-size: 10px;
+  }
+  .registry {
+    font-size: 15px;
+    width: 100px;
+    height: 35x;
+  }
+  .lost {
+    font-size: 12px;
+  }
+  #myButton {
+    font-size: 15px;
+  }
+  .cut-log-section {
+    width: 100%;
+    right: 19%;
   }
 }
 
 @media only screen and (max-width: 280px) {
   h1 {
-    font-size: 18px;
+    font-size: 15px;
   }
   h2 {
     font-size: 12px;
