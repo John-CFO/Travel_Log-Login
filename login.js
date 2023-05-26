@@ -13,7 +13,7 @@ function showPassword() {
 // Get the button element by its ID
 let button = document.getElementById("myButton");
 
-// Add an event listener for the mouseover event
+// Add an event listener for the mousehover event
 button.addEventListener("mouseover", function () {
   // Change the background color of the button to black
   button.style.backgroundColor = "black";
